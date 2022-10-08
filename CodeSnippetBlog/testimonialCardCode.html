@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Card Code Explanation</title>
+    <link rel="stylesheet" href="../CSS/prismcss.css">
+    <script src="../CSS/prism.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+
+<header>
+  <div class="container">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <!-- <img src="PahadiCoder.png" alt="" height="145px" width="150px" class="bi me-2" > -->
+
+
+        <span class="fs-4">CoderPahadi</span>
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-danger">Home</a></li>
+        <li><a href="#" class="nav-link px-2 link-danger">HTML &amp; CSS</a></li>
+        <li><a href="#" class="nav-link px-2 link-danger">JavaScript</a></li>
+
+        <li><a href="#" class="nav-link px-2 link-danger">About Us</a></li>
+        <li><a href="#" class="nav-link px-2 link-danger">Contact Us</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button class="btn btn-outline-primary me-2" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-primary me-2" data-toggle="modal" data-target="#signupModal">SignUp</button>
+      </div>
+
+
+      <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login to CoderPahadi</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+
+              
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SignUp for Updates</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="text" class="form-control" id="nameInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted"></small>
+              </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                  <label for="cexampleInputPassword1">Confirm Password</label>
+                  <input type="password" class="form-control" id="cexampleInputPassword1">
+                </div>
+                 
+                <button type="submit" class="btn btn-primary">Creat Account</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<body class="line-numbers" style="background-color: rgb(255, 255, 232);">
+    <h2>Detailed Explanation of the "Testimonial Card"</h2>
+    <p style="
+    padding: 6px 17px;
+    width: 84%;
+    text-align: left">First, create an HTML file with the name of index.html and paste the given codes in your HTML file.
+        Remember, you’ve to create a file with .html extension.</p>
+
+    <div style="width: 50% ; margin: 15px;">
+
+
+        <pre>
+        <code id="code" class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Testimonial Cards&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+            
+    &lt;figure class=&quot;testimonial&quot;&gt;
+            
+&lt;img src=&quot;1.jpg&quot; alt=&quot;&quot;&gt;
+&lt;figurecaption&gt;
+    &lt;h3&gt;Programming &lt;span&gt; Courses&lt;/span&gt;&lt;/h3&gt;
+&lt;/figurecaption&gt;
+    &lt;a href=&quot;http://&quot;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+            
+&lt;figure class=&quot;testimonial hover&quot;&gt;
+            
+&lt;img src=&quot;2.jpg&quot; alt=&quot;&quot;&gt;
+&lt;figurecaption&gt;
+    &lt;h3&gt;Order Food &lt;span&gt; Online&lt;/span&gt;&lt;/h3&gt;
+&lt;/figurecaption&gt;
+    &lt;a href=&quot;http://&quot;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+            
+&lt;figure class=&quot;testimonial&quot;&gt;
+            
+&lt;img src=&quot;3.jpg&quot; alt=&quot;&quot;&gt;
+&lt;figurecaption&gt;
+    &lt;h3&gt;Holiday  &lt;span&gt; Packages&lt;/span&gt;&lt;/h3&gt;
+&lt;/figurecaption&gt;
+    &lt;a href=&quot;http://&quot;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+              
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </code>
+    </pre>
+    </div>
+
+
+    <p style="margin-top: 50px;
+    padding: 6px 17px;
+    width: 84%;
+    text-align: left">Second, create a CSS file with the name of style.css and paste the given codes in your CSS file. Remember, you’ve
+        to create a file with .css extension.</p>
+
+
+    <div style="width: 50% ; margin: 15px;">
+
+        <pre>
+        <code id="code" class="language-css" >
+
+.testimonial {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 10px;
+    max-width: 320px;
+    min-width: 230px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+              
+body {
+              
+    background-color: rgb(255, 255, 255);
+}
+              
+.testimonial * {
+              
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+              
+}
+              
+.testimonial::before,
+.testimonial::after {
+              
+    background-color: rgba(50, 52, 60, 0.5);
+    border-top: 50px solid rgba(50, 52, 60, 0.5);
+    border-bottom: 50px solid rgba(50, 52, 60, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: " ";     
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+}
+              
+.testimonial::before {
+    transform: scaleY(2);
+}
+              
+.testimonial img {
+              
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+}
+              
+.testimonial figurecaption {
+              
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+              
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-delay: 0s;
+    z-index: 2;
+}
+              
+.testimonial h3 {
+              
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+              
+.testimonial h3 span {
+    display: block;
+    font-weight: 700;
+}
+              
+.testimonial a {
+              
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+              
+}
+              
+.testimonial:hover>img,
+.testimonial.hover>img {
+              
+    opacity: 0.6;
+}
+              
+.testimonial:hover:before,
+.testimonial.hover:before,
+.testimonial:hover:after,
+.testimonial.hover::after {
+              
+    transform: scale(1);
+    opacity: 1;
+}
+              
+.testimonial:hover figurecaption,
+.testimonial.hover figurecaption{
+              
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+        
+    </code>
+    </pre>
+    </div>
+
+    <p style="margin-top: 50px;
+    padding: 6px 17px;
+    width: 84%;
+    text-align: left">That’s all, now you’ve successfully created a Login and Registration Form in HTML CSS & JavaScript. If your code doesn’t work or you’ve faced any error/problem then please download the source code files from the given download button. It’s free and a .zip file will be downloaded then you’ve to extract it.</p>
+
+    <script src="./CSS/prism.js"></script>
+</body>
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Blogs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">HTML & CSS</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">JavaScript</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact Us</a></li>
+    </ul>
+    <p class="text-center text-muted">Copyright © 2022 <a href="http://">CoderPahadi</a> All Rights Reserved</p>
+  </footer>
+</div>
+</html>
